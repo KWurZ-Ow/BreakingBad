@@ -1,0 +1,75 @@
+a{
+    position: absolute;
+    background-image: url("/assets/carton.jpg");
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.4) inset;
+    text-decoration: none;
+    font-family: "TravelingTypewriter";
+    color: black;
+    transform: translate(15px, -52px);
+}
+.stamp{
+    position: absolute;
+    width: 350px;
+    right: 5%;
+    top: 33%;
+}
+.dossier{
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    grid-template-rows: repeat(5,auto);
+    column-gap: 50px;
+    text-align: center;
+    margin: 0 15% 0 15%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(223, 194, 150);
+    background-image: url("/assets/carton.jpg");
+    background-size: contain;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4) inset;
+    min-height: 400px;
+    transform: translate(0, 150px);
+}
+.photo{
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+}
+.photo > img:nth-child(2){
+    width: 90%;
+    border: 5px solid white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.712);
+}
+.trombone{
+    width: 90px;
+    position: absolute;
+    transform: translate(-15px, -15px);
+}
+p, h2, ul{
+    grid-column: 2 / 3;
+    text-align: left;
+    font-family: "TravelingTypewriter";
+}
+h2{
+    font-size: 35px;
+}
+p, ul{
+    font-size: 20px;
+}
+.icon{
+    width: 17px;
+    transform: translate(0, 2px);
+}
+.loading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading>img{
+    height: 100px;
+}
+.hide{
+    display: none;
+}

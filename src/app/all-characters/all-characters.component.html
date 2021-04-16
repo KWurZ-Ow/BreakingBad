@@ -1,0 +1,41 @@
+<div class="couverture">
+    <img src="/assets/BrBa.png">
+</div>
+<div class="recherche">
+    <h2>Filtrer les personnages</h2>
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="rechercheNom" placeholder="All">
+        <img class="cross" src="/assets/cross.svg" (click)="resetName()">
+        <select class="form-control" [(ngModel)]="rechercheStatus">
+            <option value="All" selected>All</option>
+            <option value="Alive">Alive</option>
+            <option value="de">Deceased</option>
+            <option value="Unknown">Unknown</option>
+        </select>
+        <input type="text" class="form-control" [(ngModel)]="recherchePseudo" placeholder="All">
+        <img class="cross" src="/assets/cross.svg" (click)="resetPseudo()">
+        <button (click)="resetAll()">Reset filters</button>
+    </div>
+</div>
+<div class="loading" [class.hide1]="(characters$ | async)"><img src="/assets/loading.gif"></div>
+<div *ngIf="characters$ | async" class="all">
+    <div 
+        class="dossier" *ngFor="let character of characters$ | async"
+        [class.hide1]="!character.name.toLowerCase().includes(rechercheNom.toLowerCase()) && rechercheNom != ''"
+        [class.hide2]="!character.status.toLowerCase().includes(rechercheStatus.toLowerCase()) && rechercheStatus != 'All'"
+        [class.hide3]="!character.nickname.toLowerCase().includes(recherchePseudo.toLowerCase()) && recherchePseudo != ''">
+        <h2>{{character.name}} <i>"{{character.nickname}}"</i></h2>
+        <p>Status : <strong
+            [class.rouge]="character.status == 'Presumed dead' || character.status == 'Deceased'"
+            [class.gris]="character.status == 'Unknown'"
+            [class.vert]="character.status == 'Alive'">{{character.status}}</strong>
+        </p>
+        <a [routerLink]="'/character/' + character.char_id">
+            <div class="photo">
+                <img src="../assets/trombone.png" class="trombone">
+                <img [class.deceased]="character.status == 'Presumed dead' || character.status == 'Deceased'" class="pp" [src]="character.img">
+                <img *ngIf="character.status == 'Presumed dead' || character.status == 'Deceased'" src="../assets\deceased.png" class="stamp">
+            </div>
+        </a>
+    </div>
+</div>

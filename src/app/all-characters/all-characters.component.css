@@ -1,0 +1,130 @@
+.couverture{
+    text-align: center;
+}
+.couverture>img{
+    height: 300px;
+    margin: 50px 0 50px 0;
+}
+.recherche{
+    background-image: url("/assets/carton.jpg");
+    margin: 0 10% 0 10%;
+    border-radius: 10px;
+    padding: 35px;
+}
+.recherche>h2{
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+.recherche>div{
+    display: grid;
+    grid-template-columns: 1fr 3fr 45px 1fr 3fr 1fr 3fr 45px 1fr 3fr 1fr;
+    grid-template-rows: 45px;
+    justify-items: center;
+    align-items: center;
+}
+.cross{
+    height: 41px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 0 8px 8px 0;
+    color: green;
+}
+.cross:hover{
+    cursor: pointer;
+}
+input{
+    width: 100%;
+    height: 41px;
+    padding: 0 0 0 5px;
+    margin: none;
+    border-radius: 8px 0 0 8px;
+    border: 2px solid rgb(49, 49, 49);
+}
+input:first-of-type{
+    grid-column-start: 2;
+}
+select{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 5;
+    border-radius: 8px;
+    border: 2px solid rgb(49, 49, 49);
+}
+input:nth-of-type(2){
+    grid-column-start: 7;
+}
+button{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 10;
+    border-radius: 8px;
+    border: 2px solid rgb(49, 49, 49);
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(211, 211, 211);
+}
+.all{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    padding: 25px 10% 500px 10%;
+}
+.dossier{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;    background-image: url("/assets/carton.jpg");
+    background-size: cover;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) inset;
+    transition: 0.5s;
+}
+.hide1, .hide2, .hide3{
+    display: none;
+}
+.dossier>h2{
+    min-height: 93px;
+}
+h2, p{
+    font-family: "TravelingTypewriter";
+    align-self: flex-start;
+    padding: 0 15px 0 15px;
+}
+img.pp{
+    width: 95%;
+    border: 5px solid white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.712);
+}
+img.deceased{
+    filter: grayscale(100%);
+}
+.photo{
+    position: relative;
+    width: 15vw;
+    margin: 20px 0 20px 0;
+}
+.trombone{
+    width: 90px;
+    position: absolute;
+    transform: translate(-15px, -15px);
+    z-index: 5;
+}
+.stamp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 13vw;
+}
+.loading{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.loading>img{
+    height: 100px;
+}

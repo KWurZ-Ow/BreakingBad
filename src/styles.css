@@ -1,0 +1,28 @@
+body{
+    /* background-color: rgb(43, 43, 43); */
+    background-image: url("/assets/bois.jpg");
+    margin: 0;
+
+}
+*::selection{
+    background-color: green;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+@font-face {
+    font-family: "TravelingTypewriter";
+    src: url("/assets/TravelingTypewriter.ttf");
+}
+.rouge{
+    background-color: rgba(255, 0, 0, 0.377);
+    padding: 3px;
+}
+.gris{
+    background-color: rgba(255, 251, 0, 0.377);
+    padding: 3px;
+}
+.vert{
+    background-color: rgba(10, 189, 3, 0.377);
+    padding: 3px;
+}

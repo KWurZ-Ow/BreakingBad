@@ -1,0 +1,19 @@
+<div class="loading" [class.hide]="(character$ | async)" style="color: white;"><img src="/assets/loading.gif"></div>
+<div class="dossier" *ngFor="let character of character$ | async">
+    <a [routerLink]="'/characters/'"><img src="/assets/undo-solid.svg" class="icon"> Back to list</a>
+    <h2>{{character.name}} <i>"{{character.nickname}}"</i></h2>
+    <p *ngIf="character.birthday !== 'Unknown'">Birthday : {{character.birthday}}</p>
+    <p>Status : <strong
+        [class.rouge]="character.status == 'Presumed dead' || character.status == 'Deceased'"
+        [class.gris]="character.status == 'Unknown'"
+        [class.vert]="character.status == 'Alive'">{{character.status}}</strong></p>
+    <div class="photo">
+        <img src="../assets/trombone.png" class="trombone">
+        <img [class.deceased]="character.status == 'Presumed dead' || character.status == 'Deceased'" class="pp" [src]="character.img">
+        <img *ngIf="character.status == 'Presumed dead' || character.status == 'Deceased'" src="../assets\deceased.png" class="stamp">
+    </div>
+    <p>Occupations :</p>
+    <ul>
+        <li *ngFor="let i of character.occupation">{{i}}</li>
+    </ul>
+</div>
