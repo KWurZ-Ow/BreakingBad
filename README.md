@@ -23,6 +23,10 @@ Son `statut` (Mort, vivant, inconnu) est surligné d'une couleur correspondante
 
 Évidemment, tout est `dynamique` et si l'API venait à être mise a jour, le site le serait aussi.
 
+***
+
+<img src="https://escaleajeux.fr/p/powe2.jpg" width="400"/>
+
 ## 📄 Page du site
 
 Lien vers le site : https://kwurz-ow.github.io/BreakingBad/characters
