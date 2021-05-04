@@ -24,8 +24,13 @@ Son `statut` (Mort, vivant, inconnu) est surligné d'une couleur correspondante
 Évidemment, tout est `dynamique` et si l'API venait à être mise a jour, le site le serait aussi.
 
 ***
+### All Characters
 
 <img src="https://raw.githubusercontent.com/KWurZ-Ow/BreakingBad/master/src/assets/pr%C3%A9sentation-brBa.png" width="400"/>
+
+### Single Character
+
+<img src="https://raw.githubusercontent.com/KWurZ-Ow/BreakingBad/master/src/assets/pr%C3%A9sentation-brBa-single.png" width="400"/>
 
 ## 📄 Page du site
 
