@@ -25,7 +25,7 @@ Son `statut` (Mort, vivant, inconnu) est surligné d'une couleur correspondante
 
 ***
 
-<img src="https://escaleajeux.fr/p/powe2.jpg" width="400"/>
+<img src="https://raw.githubusercontent.com/KWurZ-Ow/BreakingBad/master/src/assets/pr%C3%A9sentation-brBa.png" width="400"/>
 
 ## 📄 Page du site
 
