@@ -5,6 +5,6 @@ En cliquent sur un des personnages, on accède à plus de détails sur lui.
 
 Le tri fonctionne en direct avec des `two ways bindings` il est donc très efficace :D
 
-# 📄 Page du site
+## 📄 Page du site
 
 Lien vers le site : https://kwurz-ow.github.io/BreakingBad/characters
