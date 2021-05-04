@@ -11,6 +11,8 @@ Le tri fonctionne en direct avec des `two ways bindings` il est donc très effic
 
 Les requêtes sur l'API se font via la fonction `HTTP Get` d'Angular
 
+Les deux composants `All Characters` et `Single Character` utilisent le meme service (`Character Repository`) pour récupérer les informations depuis l'API.
+
 
 ## 📄 Page du site
 
