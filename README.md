@@ -13,6 +13,8 @@ Les requêtes sur l'API se font via la fonction `HTTP Get` d'Angular
 
 Les deux composants `All Characters` et `Single Character` utilisent le meme service (`Character Repository`) pour récupérer les informations depuis l'API.
 
+Pendant la rêquete sur l'API, un gif de chargement est affiché, puis les informations prennent sa place grace au `Pipe Async` d'Angular.
+
 ## ✨ Interface
 
 L'interface est réalisée en `html` et `css` brut avec  des `Flexbox`.
