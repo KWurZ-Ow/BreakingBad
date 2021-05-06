@@ -5,6 +5,10 @@ En cliquent sur un des personnages, on accède à plus de détails sur lui.
 
 J'ai réalisé ce projet dans le cadre de mes études au `DUT MMI de Grenoble` comme premier projet Angular.
 
+## 📄 Page du site
+
+Lien vers le site : https://kwurz-ow.github.io/BreakingBad/characters
+
 ## ⚙ Fonctionnement
 
 Le tri fonctionne en direct avec des `two ways bindings` il est donc très efficace :D
@@ -33,7 +37,3 @@ Son `statut` (Mort, vivant, inconnu) est surligné d'une couleur correspondante
 ### Single Character
 
 <img src="https://raw.githubusercontent.com/KWurZ-Ow/BreakingBad/master/src/assets/pr%C3%A9sentation-brBa-single.png" width="400"/>
-
-## 📄 Page du site
-
-Lien vers le site : https://kwurz-ow.github.io/BreakingBad/characters
